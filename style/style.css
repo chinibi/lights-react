@@ -1,0 +1,26 @@
+#grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  width: 315px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.grid-square {
+  width: 100px;
+  height: 100px;
+  margin: 2px;
+}
+
+.blue {
+  background-color: #99c;
+}
+
+.red {
+  background-color: #c66;
+}
