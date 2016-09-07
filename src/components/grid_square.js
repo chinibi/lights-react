@@ -1,23 +1,7 @@
-import React, {Component} from 'react';
+import React from 'react';
 
-class GridSquare extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {color: 'blue'};
-
-    this.onSquareClick = this.onSquareClick.bind(this);
-  }
-
-  onSquareClick() {
-    let newColor = this.state.color == 'blue' ? 'red' : 'blue';
-    this.setState({color: newColor});
-  }
-
-  render() {
-    return (
-      <div className={`${this.state.color} grid-square`} onClick={this.onSquareClick}></div>
-    );
-  }
+export default props => {
+  return (
+    <div className={`${props.color} grid-square`} onClick={props.onClick}></div>
+  );
 }
-
-export default GridSquare;
